@@ -80,6 +80,10 @@ h3{
     height: 268px;
     padding-right: 7px;
 }
+    .team > img{
+    position: relative;
+    left: -8px;
+}
     .container1{
         position: relative;left: -8px;
     }
