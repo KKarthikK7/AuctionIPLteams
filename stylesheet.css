@@ -57,6 +57,12 @@ h3{
 #csk{
     background-color: yellow;
 }
+#rcb{
+    background-color: red;
+}
+#mumbai{
+    background-color: lightskyblue;
+}
 .team > p{
     font-weight: 800;
     margin-bottom: -8px;
