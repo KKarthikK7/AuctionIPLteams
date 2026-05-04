@@ -1,0 +1,46 @@
+.name-logo{
+    display:flex;
+    }
+.name-logo > img{
+    width: 6%;
+    margin-left: 10px;
+}
+h3{
+    margin-top: -12px;
+}
+.container1,.container2{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: -20px;
+    margin-bottom: 90px;
+}
+.team{
+    height: 255px;
+    width: 200px;
+    text-align: center;
+    border: 4px solid black;
+    margin: 2px;
+    background-color: orange;
+}
+#srh{
+    background-color: orange;
+}
+#csk{
+    background-color: yellow;
+}
+.team > p{
+    font-weight: 800;
+    margin-bottom: -8px;
+}
+.team > img{
+    height: 170px;
+    width: 170px;
+}
+
+
+/*fix logos later sizing
+background colousr
+links on players*/
