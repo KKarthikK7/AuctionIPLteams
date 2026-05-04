@@ -71,8 +71,16 @@ h3{
     height: 170px;
     width: 170px;
 }
+@media(max-width:600px){
+.name-logo > img {
+    width: 20%;
+}
+.team{
+    width: 150px;
+}
+}
 
 
-/*fix logos later sizing
-background colousr
+
+/*background colousr
 links on players*/
