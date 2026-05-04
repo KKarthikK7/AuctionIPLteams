@@ -8,7 +8,16 @@
 h3{
     margin-top: -12px;
 }
-.container1,.container2{
+.container1{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: -20px;
+    margin-bottom: 90px;
+}
+.container2{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
