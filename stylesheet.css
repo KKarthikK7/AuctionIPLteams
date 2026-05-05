@@ -71,6 +71,9 @@ h3{
     height: 170px;
     width: 170px;
 }
+.team:hover{
+    background-color:white !important;
+}
 @media(max-width:600px){
 .name-logo > img {
     width: 20%;
