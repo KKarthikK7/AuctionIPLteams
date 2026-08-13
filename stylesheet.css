@@ -85,6 +85,51 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Light/Dark mode button */
+#theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+
+    padding: 10px 18px;
+    border: 2px solid black;
+    border-radius: 8px;
+
+    background-color: white;
+    color: black;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#theme-toggle:hover {
+    background-color: #eeeeee;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #222;
+    color: white;
+    border-color: white;
+}
+
+body.dark-mode .team {
+    border-color: white;
+}
+
+body.dark-mode .navbar a {
+    color: black;
+}
+
 @media(max-width:600px){
 .name-logo > img {
     width: 20%;
