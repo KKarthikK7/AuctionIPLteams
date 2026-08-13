@@ -287,6 +287,21 @@ body.dark-mode .team {
 body.dark-mode .navbar a {
     color: black;
 }
+.name-logo {
+    animation: sectionIn 0.7s ease both;
+}
+
+@keyframes sectionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 
 /* =========================
