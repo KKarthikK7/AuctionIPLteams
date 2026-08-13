@@ -197,7 +197,78 @@ body.dark-mode .navbar a {
     left: 130%;
 }
 
+/* =========================
+   TEAM LOGO BEHIND SQUAD
+   ========================= */
 
+.container1,
+.container2,
+.container3,
+.container4 {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+}
+
+/* Big transparent logo */
+.container1::before,
+.container2::before,
+.container3::before,
+.container4::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0.08;
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+/* SRH */
+.container1::before {
+    background-image: url("./newsrh.avif");
+}
+
+/* CSK */
+.container2::before {
+    background-image: url("./csk.avif");
+}
+
+/* RCB */
+.container3::before {
+    background-image: url("./rcb.avif");
+}
+
+/* MI */
+.container4::before {
+    background-image: url("./mumbai.avif");
+}
+
+
+/* Keep player cards above logo */
+
+.container1 .team,
+.container2 .team,
+.container3 .team,
+.container4 .team {
+    position: relative;
+    z-index: 1;
+}
 @media(max-width:600px){
 .name-logo > img {
     width: 20%;
