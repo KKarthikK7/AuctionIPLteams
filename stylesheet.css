@@ -44,8 +44,15 @@ h3{
     height: 170px;
     width: 170px;
 }
+.team{
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
 .team:hover{
     background-color: white !important;
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    z-index: 10;
 }
 .navbar{
     display: flex;
