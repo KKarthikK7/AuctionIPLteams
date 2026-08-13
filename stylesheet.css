@@ -302,6 +302,26 @@ body.dark-mode .navbar a {
         transform: translateX(0);
     }
 }
+.team > img {
+    height: 170px;
+    width: 170px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.35s ease,
+        filter 0.35s ease;
+}
+
+.team:hover > img {
+    transform: scale(1.07);
+
+    filter:
+        contrast(1.05)
+        saturate(1.08);
+}
 
 
 /* =========================
