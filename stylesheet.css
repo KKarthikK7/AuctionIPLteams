@@ -54,6 +54,35 @@ h3{
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
     z-index: 10;
 }
+.navbar > div {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glass shine */
+.navbar > div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+
+    transition: left 0.5s ease;
+}
+
+/* Shine moves across */
+.navbar > div:hover::before {
+    left: 150%;
+}
 .navbar{
     display: flex;
     justify-content: space-evenly;
